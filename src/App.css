@@ -228,7 +228,15 @@
   justify-content: center;
   align-items: center;
 }
-
+.eye-button {
+  position: absolute;
+  right: 25px;
+  bottom: 50%;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  color: #005792;
+}
 .input {
   color: #333;
   font-size: 1.2rem;
@@ -238,7 +246,7 @@
   background-color: rgb(255, 255, 255);
   border: none;
   width: 90%;
-  display: block;
+  /* display: block; */
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
   outline: none;
