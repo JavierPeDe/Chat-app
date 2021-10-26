@@ -22,6 +22,7 @@ export const MessageForm = (props) => {
     const handleUpload = (e) => {
         sendMessage(creds, chatId, { files: e.target.files, text: '' })
     }
+
     return (
         <form onSubmit={handleSubmit} className="message-form">
             <input
