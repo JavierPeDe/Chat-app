@@ -3,10 +3,7 @@ import { MyMessage } from "./MyMessage";
 import { TheirMessage } from "./TheirMessage";
 export const ChatFeed = (props) => {
     const { chats, activeChat, userName, messages } = props;
-    console.log('props chatFeed:', props);
     const chat = chats && chats[activeChat];
-    console.log('chat:', chat)
-
     const renderReadReceipts = (message, isMyMessage) => {
         return chat.people.map((person, index) => person.last_read === message.id && (
             <div
